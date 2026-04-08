@@ -1,0 +1,153 @@
+@media (min-width: 1030px) {
+  aside {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    padding: 20px 30px;
+    background-color: #ffffff;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: gray;
+    border-left: 1px solid #e5e7eb;
+    height: 100vh;
+  }
+
+  aside .heading {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  aside .icon {
+    background-color: #2c51f1;
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  aside .icon i {
+    color: white;
+    font-size: 1.25rem;
+  }
+  aside .heading .title h2 {
+    font-size: 2.25rem;
+    color: #101828;
+  }
+  aside .heading .title p {
+    font-size: 0.875rem;
+  }
+  aside .main ul li {
+    margin-bottom: 24px;
+  }
+
+  aside .main ul li div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 0px 16px;
+  }
+  aside .main ul li .special-style {
+    background-color: #eff6ff;
+    border: 1px solid #dbeafe;
+    padding: 12px 16px;
+    border-radius: 12px;
+    color: #1447e6;
+  }
+
+  aside .links h3 {
+    color: #364153;
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+  aside .group {
+    margin-top: 20px;
+  }
+  aside .links button {
+    border: none;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  aside .links .group span {
+    color: #374151;
+    font-size: 0.875rem;
+    font-weight: 500;
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+  }
+  aside .group div {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    border-radius: 14px;
+    align-items: center;
+    justify-content: center;
+  }
+  aside .group .fa-plane {
+    background-color: #dbe8fc;
+    color: #155dfc;
+  }
+
+  aside .group .plus {
+    background-color: #d5f3e1;
+    color: #00a63e;
+  }
+
+  aside .group .receipt {
+    background-color: #f7edff;
+    color: #ae44fb;
+  }
+
+  aside .group .chart {
+    background-color: #fff0e6;
+    color: #f54900;
+  }
+  header {
+    margin-right: 250px;
+    margin-top: 30px;
+  }
+  .header-section {
+    display: flex;
+    justify-content: space-between;
+  }
+  .section-one .items {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .section-one .items .item {
+    width: 30%;
+  }
+  main {
+    margin-right: 250px;
+  }
+  .section-two .items {
+    grid-template-areas:
+      "one   one    one    one two two two two two two two two"
+      "three three three  three two two two two two two two two";
+    gap: 20px;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .section-two .item-two table {
+    text-align: right;
+    width: 100%;
+    min-width: auto;
+  }
+  .section-three .items {
+    grid-template-areas:
+      "one   one    one    one  two      two     two   two     four  four  four  four"
+      "one   one    one    one  three   three   three  three   four   four  four  four"
+      "one   one    one    one  three   three   three  three   four   four  four  four"
+      "one   one    one    one    .         .     .       .       .      .    .      .";
+    gap: 20px;
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
